@@ -1,0 +1,6 @@
+{
+  "name": "Project and Team Task Management Platform",
+  "description": "An enterprise-grade, full-stack collaborative platform for managing projects, team roles, and structured tasks with real-time reporting, activity logs, and a sleek user interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

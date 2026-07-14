@@ -1,0 +1,225 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "email": "admin@example.com",
+      "fullName": "Chief Administrator",
+      "role": "Administrator",
+      "status": "Active",
+      "createdAt": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "usr-pm",
+      "email": "pm@example.com",
+      "fullName": "Sarah Jenkins",
+      "role": "Project Manager",
+      "status": "Active",
+      "createdAt": "2026-06-02T10:00:00.000Z"
+    },
+    {
+      "id": "usr-alice",
+      "email": "alice@example.com",
+      "fullName": "Alice Smith",
+      "role": "Team Member",
+      "status": "Active",
+      "createdAt": "2026-06-03T09:30:00.000Z"
+    }
+  ],
+  "passwords": {
+    "usr-admin": "$2b$10$1KwwiBEpErXa1WHCZ9saQebUyaemLo0en2BkNHtXvVFbVK7gST.eK",
+    "usr-pm": "$2b$10$1KwwiBEpErXa1WHCZ9saQebUyaemLo0en2BkNHtXvVFbVK7gST.eK",
+    "usr-alice": "$2b$10$1KwwiBEpErXa1WHCZ9saQebUyaemLo0en2BkNHtXvVFbVK7gST.eK"
+  },
+  "projects": [
+    {
+      "id": "prj-alpha",
+      "name": "E-Commerce Platform Redesign",
+      "description": "Complete overhaul of the consumer shopping experience, optimizing checkout flows and page performance.",
+      "startDate": "2026-06-15",
+      "endDate": "2026-08-15",
+      "status": "In Progress",
+      "managerId": "usr-pm",
+      "progressPercentage": 45,
+      "createdAt": "2026-06-10T10:00:00.000Z"
+    },
+    {
+      "name": "E-commerce platform",
+      "description": "website ",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-28",
+      "status": "Planning",
+      "managerId": "usr-pm",
+      "id": "prj-mrkdmufl",
+      "progressPercentage": 100,
+      "createdAt": "2026-07-14T08:15:57.585Z"
+    }
+  ],
+  "projectMembers": [
+    {
+      "projectId": "prj-alpha",
+      "userId": "usr-alice"
+    },
+    {
+      "projectId": "prj-mrkdmufl",
+      "userId": "usr-alice"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-1",
+      "title": "Design high-fidelity UI landing page mockups",
+      "description": "Create visual mockups for the desktop and mobile landing experience.",
+      "status": "Completed",
+      "priority": "High",
+      "assignedUserId": "usr-alice",
+      "projectId": "prj-alpha",
+      "startDate": "2026-06-16",
+      "dueDate": "2026-06-30",
+      "estimatedHours": 24,
+      "createdById": "usr-pm",
+      "updatedById": "usr-pm",
+      "createdAt": "2026-06-15T12:00:00.000Z",
+      "updatedAt": "2026-06-30T17:00:00.000Z"
+    },
+    {
+      "title": "Do backend",
+      "description": "all backend part",
+      "status": "Completed",
+      "priority": "Medium",
+      "assignedUserId": "usr-pm",
+      "projectId": "prj-mrkdmufl",
+      "startDate": "2026-07-15",
+      "dueDate": "2026-07-17",
+      "estimatedHours": 15,
+      "createdById": "usr-pm",
+      "updatedById": "usr-pm",
+      "id": "tsk-mrkdqmsn",
+      "createdAt": "2026-07-14T08:18:54.311Z",
+      "updatedAt": "2026-07-14T08:29:04.345Z"
+    }
+  ],
+  "taskComments": [
+    {
+      "id": "cmt-1",
+      "taskId": "tsk-1",
+      "userId": "usr-pm",
+      "userFullName": "Sarah Jenkins",
+      "role": "Project Manager",
+      "comment": "Excellent progress. Please confirm the responsive breakpoints.",
+      "createdAt": "2026-06-16T14:00:00.000Z"
+    },
+    {
+      "id": "cmt-mrkdrxnu",
+      "taskId": "tsk-mrkdqmsn",
+      "userId": "usr-alice",
+      "userFullName": "Alice Smith",
+      "role": "Team Member",
+      "comment": "i will help them",
+      "createdAt": "2026-07-14T08:19:55.050Z"
+    }
+  ],
+  "taskAttachments": [
+    {
+      "id": "att-1",
+      "taskId": "tsk-1",
+      "userId": "usr-pm",
+      "fileName": "wireframe.pdf",
+      "fileType": "application/pdf",
+      "fileSize": 1250000,
+      "fileUrl": "/uploads/wireframe.pdf",
+      "createdAt": "2026-06-16T14:30:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "usr-alice",
+      "message": "You have been assigned to task: Design high-fidelity UI landing page mockups",
+      "type": "TaskAssigned",
+      "isRead": true,
+      "createdAt": "2026-06-15T12:01:00.000Z"
+    },
+    {
+      "id": "notif-mrkdmufo",
+      "userId": "usr-alice",
+      "message": "You have been assigned to Project: E-commerce platform",
+      "type": "System",
+      "isRead": false,
+      "createdAt": "2026-07-14T08:15:57.588Z"
+    },
+    {
+      "id": "notif-mrkdqmte",
+      "userId": "usr-pm",
+      "message": "You have been assigned to task: \"Do backend\" in project: \"E-commerce platform\"",
+      "type": "TaskAssigned",
+      "isRead": false,
+      "createdAt": "2026-07-14T08:18:54.338Z"
+    },
+    {
+      "id": "notif-mrkdrxnv",
+      "userId": "usr-pm",
+      "message": "Alice Smith commented on task: \"Do backend\"",
+      "type": "System",
+      "isRead": false,
+      "createdAt": "2026-07-14T08:19:55.051Z"
+    },
+    {
+      "id": "notif-mrke3pi3",
+      "userId": "usr-pm",
+      "message": "Task completed: \"Do backend\" has been marked completed by Sarah Jenkins",
+      "type": "TaskCompleted",
+      "isRead": false,
+      "createdAt": "2026-07-14T08:29:04.348Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act-1",
+      "userId": "usr-pm",
+      "userFullName": "Sarah Jenkins",
+      "action": "Project Created",
+      "details": "Created project E-Commerce Platform Redesign",
+      "createdAt": "2026-06-10T10:00:00.000Z"
+    },
+    {
+      "id": "act-mrkdmufp",
+      "userId": "usr-admin",
+      "userFullName": "Chief Administrator",
+      "action": "Project Created",
+      "details": "Created project \"E-commerce platform\"",
+      "createdAt": "2026-07-14T08:15:57.589Z"
+    },
+    {
+      "id": "act-mrkdoqy9",
+      "userId": "usr-pm",
+      "userFullName": "Sarah Jenkins",
+      "action": "Project Updated",
+      "details": "Updated details for project \"E-commerce platform\"",
+      "createdAt": "2026-07-14T08:17:26.386Z"
+    },
+    {
+      "id": "act-mrkdqmsp",
+      "userId": "usr-pm",
+      "userFullName": "Sarah Jenkins",
+      "action": "Task Created",
+      "details": "Created task \"Do backend\" in project \"E-commerce platform\"",
+      "createdAt": "2026-07-14T08:18:54.313Z"
+    },
+    {
+      "id": "act-mrke39ac",
+      "userId": "usr-pm",
+      "userFullName": "Sarah Jenkins",
+      "action": "Task Status Updated",
+      "details": "Updated task \"Do backend\" status to In Progress",
+      "createdAt": "2026-07-14T08:28:43.332Z"
+    },
+    {
+      "id": "act-mrke3pi5",
+      "userId": "usr-pm",
+      "userFullName": "Sarah Jenkins",
+      "action": "Task Status Updated",
+      "details": "Updated task \"Do backend\" status to Completed",
+      "createdAt": "2026-07-14T08:29:04.349Z"
+    }
+  ]
+}
